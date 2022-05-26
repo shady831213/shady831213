@@ -1,7 +1,7 @@
 ### Hi there 👋
 
 - 🔭 I’m currently working on Picocom
-- 🌱 I’m currently learning Theory of Computation
+- 🌱 I’m currently learning Theory of Computation, Category Theory
 - 😄 Just for fun!
 
 <a href="https://www.linkedin.com/in/旸-李-727095120">
