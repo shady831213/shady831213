@@ -1,5 +1,4 @@
-### Hi there 👋
-
+### Hi there 👋 Finding job. Feel free to contact me! 
 - 🔭 I’m currently working on Picocom
 - 🌱 I’m currently learning Theory of Computation, Category Theory
 - 😄 Just for fun!
