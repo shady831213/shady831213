@@ -18,5 +18,5 @@
 
 <p align="left">
  Visitors<br>
- <img src="https://profile-counter.glitch.me/shady831213/count.svg" />
+ <img src="https://profile-counter.deno.dev/shady831213/count.svg" />
 </p>
