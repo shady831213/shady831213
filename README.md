@@ -11,9 +11,9 @@
 ![Github stars](https://img.shields.io/github/stars/shady831213?style=plastic&logo=github)
 ![Github followers](https://img.shields.io/github/followers/shady831213?style=plastic&logo=github)
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=shady831213&show_icons=true&theme=dark&include_all_commits=true)
+![GitHub stats](./profile/stats.svg)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs?username=shady831213&show_icons=true&theme=dark&layout=compact&&exclude_repo=shady831213,mynachos&langs_count=10)
+![Top Langs](./profile/top-langs.svg)
 
 
 <p align="left">
