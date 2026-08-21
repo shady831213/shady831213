@@ -9,14 +9,24 @@ I enjoy building things at the boundary between **architecture specifications, e
 ## Selected projects
 
 ### [terminus](https://github.com/shady831213/terminus)
-A RISC-V instruction set and system simulator written in Rust.
+A RISC-V instruction-set and system simulator written in Rust.
 
-- RV32/RV64 with M/S/U privilege modes
-- MMU, page-table walking, PMP and TLB
+- RV32/RV64 with I + M/A/F/D/C and M/S/U privilege modes
+- Sv32 / Sv39 / Sv48 virtual memory, page-table walking, PMP and TLBs
 - SMP Linux boot
 - PLIC / CLINT
 - VirtIO disk, network, console and input devices
 - HDL co-simulation support
+
+### [etha_model](https://github.com/shady831213/etha_model)
+A Rust-based functional model for exploring **accelerator architecture and HW/SW interfaces**.
+
+- RX/TX queue and DMA-descriptor architecture
+- packet parsing, filtering, dispatch and arbitration pipelines
+- software-visible register/interrupt interfaces
+- Rust proc-macro DSLs that generate C register/descriptor headers
+- IPsec/crypto acceleration and optional ROHC
+- Chrome Trace based model observability and analysis
 
 ### [terminus_cosim](https://github.com/shady831213/terminus_cosim)
 A co-simulation environment connecting **RISC-V ISA models, RTL CPU cores, firmware, and the host verification environment**.
@@ -27,10 +37,29 @@ Rust-based infrastructure for firmware-driven verification and HW/SW co-simulati
 ### [jarvism](https://github.com/shady831213/jarvism) · [jarvisuk](https://github.com/shady831213/jarvisuk)
 Verification methodology and simulation infrastructure: test discovery, regression management, extensible simulator/runner plugins, UVM utilities, memory/address modeling, interrupt infrastructure, register regions, and clock/reset management.
 
+## Modeling & verification ecosystem
+
+Several of these projects are intentionally reusable pieces of the same broader idea:
+
+```text
+architecture / HW-SW interface
+          │
+          ├── terminus       executable CPU/system model
+          ├── etha_model     accelerator architecture exploration
+          │
+          ├── terminus_vault ISA/CSR definition and code-generation tooling
+          ├── spaceport      memory/device/interrupt substrate
+          │
+          ├── terminus_cosim ISA ↔ RTL co-simulation
+          └── vfw / vhost    firmware + host verification infrastructure
+```
+
+I am interested in making architecture models, hardware/software interfaces, and verification infrastructure **composable rather than isolated artifacts**.
+
 ## Things I like thinking about
 
 - Computer architecture and executable architecture models
-- Hardware/software co-design
+- Hardware/software co-design and accelerator architecture
 - Verification methodology and simulation infrastructure
 - PCIe, IOMMU, virtualization and heterogeneous systems
 - GPU system architecture
